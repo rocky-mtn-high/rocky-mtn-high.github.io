@@ -27,7 +27,7 @@ url: "https://rocky-mtn-high.github.io/"
 github_username: rocky-mtn-high
 
 # Build settings
-theme: minima
+theme: Portfolio
 plugins:
   - jekyll-feed
 # Exclude from processing.
