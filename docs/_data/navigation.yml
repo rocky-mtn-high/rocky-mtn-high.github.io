@@ -4,9 +4,9 @@ main:
     url: /home
   - title: "About"
     url: /about/
-  -title: "Passions"
+  - title: "Passions"
     url: /passions/
-  -title: "Projects"
+  - title: "Projects"
     url: /projects/
   # - title: "Sample Collections"
   #   url: /collection-archive/
