@@ -1,5 +1,5 @@
 ---
 layout: page
-title: "Passions"
+title: Passions
 permalink: /passions/
 ---
