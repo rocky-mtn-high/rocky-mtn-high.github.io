@@ -32,6 +32,16 @@ minimal_mistakes_skin: "air"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+
+incude:
+  - _pages
+  - _posts
+  - _projects
+  - _data
+  - _sass
+  - _includes
+  - _layouts
+  - _assets
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
