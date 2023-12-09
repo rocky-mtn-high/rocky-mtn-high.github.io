@@ -23,7 +23,7 @@ email: rachelcastro0109@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Personal website for Rachel Castro.
 baseurl: "rocky-mtn-high.github.io/"
-url: "https://rocky-mtn-high.github.io/"
+url: "https://rocky-mtn-high.github.io/docs/"
 github_username: rocky-mtn-high
 
 # Build settings
