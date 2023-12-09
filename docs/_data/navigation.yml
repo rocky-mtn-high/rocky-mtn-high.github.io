@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "Main page"
-    url: https://rocky-mtn-high.github.io/
+    url: /home
   - title: "About"
-    url: https://rocky-mtn-high.github.io/about/
+    url: /about/
   -title: "Passions"
-    url: https://rocky-mtn-high.github.io/passions/
+    url: /passions/
   -title: "Projects"
-    url: https://rocky-mtn-high.github.io/projects/
+    url: /projects/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
