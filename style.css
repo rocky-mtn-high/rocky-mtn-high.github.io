@@ -74,13 +74,15 @@ footer {
 
 
 /* Headshot stuff */
-.header {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  border-bottom: 1px solid #ddd;
+.headshot {
+  float: right;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
-
 
 .headshot {
   width: 110px;
