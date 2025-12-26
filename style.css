@@ -4,12 +4,12 @@
   padding: 0;
 }
 
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
-  padding: 0;
+  color: #111;
+  background: #ffffff;
 }
 
 header {
@@ -19,9 +19,13 @@ header {
   text-align: center;
 }
 
+
+
 header h1 {
-  margin-bottom: 0.5rem;
+  font-size: 0.5rem;
+  color: #1F4E79;
 }
+
 
 nav a {
   color: white;
@@ -39,9 +43,6 @@ main {
   padding: 0 1rem;
 }
 
-section {
-  margin-bottom: 2rem;
-}
 
 h2 {
   border-bottom: 2px solid #ddd;
@@ -49,21 +50,8 @@ h2 {
   padding-bottom: 0.3rem;
 }
 
-.project-card {
-  background: white;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
-.project-card a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #0077cc;
-}
-
-footer {
+/* footer {
   text-align: center;
   padding: 1rem;
   background: #222;
@@ -71,7 +59,7 @@ footer {
   position: sticky;
   bottom: 0;
 }
-
+ */
 
 /* Headshot stuff */
 .headshot {
