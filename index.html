@@ -4,105 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rachel Castro - Personal Site</title>
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  
+  <!-- This line instantly styles your whole page beautifully -->
   <link rel="stylesheet" href="https://jsdelivr.net">
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  
+  <style>
+    /* Small custom tweaks to look like a premium academic page */
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .profile-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+    }
+    .profile-pic {
+      flex: 0 0 200px;
+    }
+    .profile-pic img {
+      border-radius: 8px;
+      width: 100%;
+      height: auto;
+    }
+    .about-text {
+      flex: 1;
+      min-width: 300px;
+    }
+    .year-heading {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-  <h1>Rachel Castro</h1>
-  
-  <h2 style="text-align: center;"> Graduate Student, Mathematics<br />
-    Tufts University</h2>
- 
-</header>
-<figure>
-        <img src="./headshot.jpg"
-          loading="lazy" alt="Headshot" width="200" height="200" />
-        <figcaption>
-         Me in the Colorado School of Mines <a href="https://www.mines.edu/hat/">Engineer Hat </a>
+    <h1>Rachel Castro</h1>
+    <p style="font-size: 1.2rem; color: var(--text-muted);">
+      Graduate Student, Mathematics<br />
+      Tufts University
+    </p>
+  </header>
+
+  <main>
+    <!-- Combined your Image and About Me into a clean side-by-side layout -->
+    <h2>About Me</h2>
+    <div class="profile-container">
+      <figure class="profile-pic">
+        <img src="./headshot.jpg" loading="lazy" alt="Rachel Castro Headshot" width="200" height="200" />
+        <figcaption style="font-size: 0.85rem; text-align: center; margin-top: 0.5rem;">
+          Me in the Colorado School of Mines <a href="https://www.mines.edu/hat/" target="_blank">Engineer Hat</a>
         </figcaption>
       </figure>
-  <main>
-    <h2> About Me</h2>
-    <!-- <img src="./headshot.jpg" alt="Headshot of Rachel Castro" class="headshot" /> -->
-    
-    <p>I am a graduate student in Mathematics at Tufts University, with research interests in complexity theory and quantum computing. Specifically,
-    my interests lie at the intersections of complexity, computability, algebra, and combinatorics.  I am very curious about solving computational
-    problems with algebraic ideas; especially when there are no other tractable solutions to be found. Recently, I have been thinking about geometric
-    complexity theory and its potential to introduce additional structure to complexity classes. 
+      
+      <div class="about-text">
+        <p>I am a graduate student in Mathematics at Tufts University, with research interests in complexity theory and quantum computing. Specifically, my interests lie at the intersections of complexity, computability, algebra, and combinatorics. I am very curious about solving computational problems with algebraic ideas; especially when there are no other tractable solutions to be found. Recently, I have been thinking about geometric complexity theory and its potential to introduce additional structure to complexity classes.</p>
+        <p>I plan to continue both teaching and research.</p>
+        <p>I like to ski, powerlift, and read science fiction.</p>
+      </div>
+    </div>
 
-    I plan to continue both teaching and research.
-
-     I like to ski, powerlift, and read science fiction.
-    </p>
-
-      <h2>Contact</h2>
-      <h3 > Feel free to reach out via email if you want to connect!</h3>
-      <p>
-        Email: rachel [dot] castro [at] tufts [dot] edu <br />
-        LinkedIn: <a href="https://www.linkedin.com/in/rachel-castro-1753541bb/"> link </a> 
-      </p>
-
-    <h2> Education </h2>
+    <h2>Education</h2>
     <ul>
-  
-  <li>Tufts University, PhD in Mathematics (expected 2031)</li>
-                          <li> MS in Mathematics (expected 2027) </li>
-  <li>Colorado School of Mines, BS in Computer Science + Data Science, 2025 </li>
-</ul>
-    
-
-    
+      <li><strong>Tufts University</strong>, PhD in Mathematics (expected 2031)</li>
+      <li><strong>Tufts University</strong>, MS in Mathematics (expected 2027)</li>
+      <li><strong>Colorado School of Mines</strong>, BS in Computer Science + Data Science, 2025</li>
+    </ul>
 
     <h2>Projects, Slides, Posters, Talks</h2>
 
-    2026
-<ul>
-    <li>
-      <a href= "Quantum_II_Final_Project_Background_Report (1).pdf" target = "_blank"> Topological Quantum Computing Background Report</a>
-    </li>
-  <li>
-    <a href= "Quantum_II_Final_Project_Report (1).pdf" target = "_blank"> Topological Quantum Computing Final Report</a> 
-  </li>
-    <!-- <li>
-      <a href="./Quantum Information Theory Background Presentation.mp4" target ="_blank"> </a> Intro to Topological Quantum Computing Talk
-    </li> -->
-  <li>
-    Tree Eval is in log(n)loglog(n) Space Through Roots of Unity Proof; Tufts Theoretical CS Seminar
-  </li>
-  <li>
-    The Mathematics of Hard Problems; Tufts Mathematics Monday Math Meeting
-  </li>
-</ul>
-    2025
-<ul>
-  <li>
-    <a href="./Quantum_Final_Project_Report_Fall25.pdf" target="_blank"> Quantum CS Research Report (Fall 2025)</a> <br/>
-    <a href="./Final_project_presentation_Fall25.pdf" target="_blank"> (Slides for my presentation on the report)</a>
-  </li>
-  <li>
-    <a href="./Poster_Two_Spring25.pdf" target="_blank">Conference Poster</a>
-  </li>
-  <!-- <li>
-    <a href="Something" target="_blank"> Teaching statement </a>
-  </li> -->
-</ul>
+    <div class="year-heading">2026</div>
+    <ul>
+      <li><a href="Quantum_II_Final_Project_Background_Report (1).pdf" target="_blank">Topological Quantum Computing Background Report</a></li>
+      <li><a href="Quantum_II_Final_Project_Report (1).pdf" target="_blank">Topological Quantum Computing Final Report</a></li>
+      <li>Tree Eval is in log(n)loglog(n) Space Through Roots of Unity Proof; Tufts Theoretical CS Seminar</li>
+      <li>The Mathematics of Hard Problems; Tufts Mathematics Monday Math Meeting</li>
+    </ul>
+        
+    <div class="year-heading">2025</div>
+    <ul>
+      <li>
+        <a href="./Quantum_Final_Project_Report_Fall25.pdf" target="_blank">Quantum CS Research Report (Fall 2025)</a><br/>
+        <a href="./Final_project_presentation_Fall25.pdf" target="_blank">Slides for my presentation on the report</a>
+      </li>
+      <li><a href="./Poster_Two_Spring25.pdf" target="_blank">Conference Poster</a></li>
+    </ul>
 
+    <h2>Contact</h2>
+    <p>Feel free to reach out via email if you want to connect!</p>
+    <p>
+      <strong>Email:</strong> rachel [dot] castro [at] tufts [dot] edu <br />
+      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rachel-castro-1753541bb/" target="_blank">link</a> 
+    </p>
 
-
-<button id="dark-mode-toggle">Toggle dark mode</button>
-    
-    
   </main>
 
-
-<script>
-  document
-  .querySelector("#dark-mode-toggle")
-  .addEventListener('click', () => {
-     document.body.classList.toggle("latex-dark");
-  });
-</script>
 </body>
 </html>
