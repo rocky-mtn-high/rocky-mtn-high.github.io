@@ -8,38 +8,110 @@
   <link rel="stylesheet" href="https://jsdelivr.net">
   
   <style>
-    body {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
+    :root {
+      --primary-accent: #1b4d3e; 
+      --text-main: #2b2b2b;
+      --bg-light: #fdfdfd;
     }
+
+    body {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+      background-color: var(--bg-light);
+      color: var(--text-main);
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
     header {
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 1.5rem;
     }
+
+    header h1 {
+      color: var(--primary-accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      color: #4a5568;
+    }
+
+    h2 {
+      color: var(--primary-accent);
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 0.25rem;
+      margin-top: 2.5rem;
+    }
+
     .profile-container {
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
+      gap: 2.5rem;
       align-items: flex-start;
       margin-bottom: 2rem;
     }
+
     .profile-pic {
-      flex: 0 0 200px;
+      flex: 0 0 220px;
+      margin: 0;
+      background: #f7fafc;
+      padding: 0.75rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     }
+
     .profile-pic img {
-      border-radius: 8px;
+      border-radius: 6px;
       width: 100%;
       height: auto;
+      display: block;
     }
+
+    .profile-pic figcaption {
+      font-size: 0.8rem;
+      text-align: center;
+      margin-top: 0.75rem;
+      color: #718096;
+    }
+
     .about-text {
       flex: 1;
       min-width: 300px;
+      line-height: 1.7;
     }
-    .year-heading {
-      margin-top: 1.5rem;
-      margin-bottom: 0.5rem;
+
+    .year-badge {
+      display: inline-block;
+      background-color: #edf2f7;
+      color: #4a5568;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
       font-weight: bold;
+      font-size: 0.9rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    a {
+      color: var(--primary-accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: #2f855a;
+    }
+
+    .contact-box {
+      background-color: #f7fafc;
+      border-left: 4px solid var(--primary-accent);
+      padding: 1rem 1.5rem;
+      border-radius: 0 8px 8px 0;
     }
   </style>
 </head>
@@ -47,26 +119,26 @@
 
   <header>
     <h1>Rachel Castro</h1>
-    <p style="font-size: 1.2rem; color: var(--text-muted);">
-      Graduate Student, Mathematics<br />
-      Tufts University
-    </p>
+    <div class="subtitle">
+       PhD Student, Mathematics<br />
+      <strong>Tufts University</strong>
+    </div>
   </header>
 
   <main>
-    <h2>About Me</h2>
     <div class="profile-container">
       <figure class="profile-pic">
         <img src="./headshot.jpg" loading="lazy" alt="Rachel Castro Headshot" width="200" height="200" />
-        <figcaption style="font-size: 0.85rem; text-align: center; margin-top: 0.5rem;">
-          Me in the Colorado School of Mines <a href="https://www.mines.edu/hat/" target="_blank">Engineer Hat</a>
+        <figcaption>
+          Me in the Colorado School of Mines <a href="https://mines.edu" target="_blank">Engineer Hat</a>
         </figcaption>
       </figure>
       
       <div class="about-text">
+        <h2>About Me</h2>
         <p>I am a graduate student in Mathematics at Tufts University, with research interests in complexity theory and quantum computing. Specifically, my interests lie at the intersections of complexity, computability, algebra, and combinatorics. I am very curious about solving computational problems with algebraic ideas; especially when there are no other tractable solutions to be found. Recently, I have been thinking about geometric complexity theory and its potential to introduce additional structure to complexity classes.</p>
         <p>I plan to continue both teaching and research.</p>
-        <p>I like to ski, powerlift, and read science fiction.</p>
+        <p><em>I like to ski, powerlift, and read science fiction.</em></p>
       </div>
     </div>
 
@@ -79,7 +151,7 @@
 
     <h2>Projects, Slides, Posters, Talks</h2>
 
-    <div class="year-heading">2026</div>
+    <div class="year-badge">2026</div>
     <ul>
       <li><a href="Quantum_II_Final_Project_Background_Report (1).pdf" target="_blank">Topological Quantum Computing Background Report</a></li>
       <li><a href="Quantum_II_Final_Project_Report (1).pdf" target="_blank">Topological Quantum Computing Final Report</a></li>
@@ -87,7 +159,7 @@
       <li>The Mathematics of Hard Problems; Tufts Mathematics Monday Math Meeting</li>
     </ul>
         
-    <div class="year-heading">2025</div>
+    <div class="year-badge">2025</div>
     <ul>
       <li>
         <a href="./Quantum_Final_Project_Report_Fall25.pdf" target="_blank">Quantum CS Research Report (Fall 2025)</a><br/>
@@ -97,11 +169,13 @@
     </ul>
 
     <h2>Contact</h2>
-    <p>Feel free to reach out via email if you want to connect!</p>
-    <p>
-      <strong>Email:</strong> rachel [dot] castro [at] tufts [dot] edu <br />
-      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rachel-castro-1753541bb/" target="_blank">link</a> 
-    </p>
+    <div class="contact-box">
+      <p>Feel free to reach out via email if you want to connect!</p>
+      <p style="margin: 0;">
+        <strong>Email:</strong> rachel [dot] castro [at] tufts [dot] edu <br />
+        <strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank">link</a> 
+      </p>
+    </div>
 
   </main>
 
